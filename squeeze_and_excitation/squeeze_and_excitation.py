@@ -15,8 +15,8 @@ class ChannelSELayer(nn.Module):
         super(ChannelSELayer, self).__init__()
         num_channels_reduced = num_channels // reduction_ratio
         self.reduction_ratio = reduction_ratio
-        self.fc1 = nn.Linear(num_channels, num_channels_reduced, bias=False)
-        self.fc2 = nn.Linear(num_channels_reduced, num_channels, bias=False)
+        self.fc1 = nn.Linear(num_channels, num_channels_reduced, bias=True)
+        self.fc2 = nn.Linear(num_channels_reduced, num_channels, bias=True)
         self.relu = nn.ReLU()
         self.sigmoid = nn.Sigmoid()
 
