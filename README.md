@@ -1,4 +1,4 @@
-# squeeze_and_excitation
+# Squeeze and Excitation Blocks for Fully ConvNets
 
 PyTorch Implementation of 'squeeze and excitation' blocks for Fully Convolutional Neural Networks
 
