@@ -14,6 +14,7 @@ from enum import Enum
 
 import torch
 import torch.nn as nn
+import torch.nn.Functional as F
 
 
 class ChannelSELayer(nn.Module):
@@ -70,15 +71,21 @@ class SpatialSELayer(nn.Module):
         self.conv = nn.Conv2d(num_channels, 1, 1)
         self.sigmoid = nn.Sigmoid()
 
-    def forward(self, input_tensor):
+    def forward(self, input_tensor, weights=None):
         """
 
         :param input_tensor: X, shape = (batch_size, num_channels, H, W)
         :return: output_tensor
         """
         # spatial squeeze
-        batch_size, _, a, b = input_tensor.size()
-        squeeze_tensor = self.sigmoid(self.conv(input_tensor))
+        batch_size, channel, a, b = input_tensor.size()
+
+        if weights:
+            weights = weights.view(1, channel, 1, 1)
+            out = F.conv2d(input_tensor, weights)
+        else:
+            out = self.conv(input_tensor)
+        squeeze_tensor = self.sigmoid(out)
 
         # spatial excitation
         output_tensor = torch.mul(input_tensor, squeeze_tensor.view(batch_size, 1, a, b))
