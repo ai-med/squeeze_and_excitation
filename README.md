@@ -4,6 +4,8 @@ PyTorch Implementation of 'squeeze and excitation' blocks for Fully Convolutiona
 
 Authors: Abhijit Guha Roy and Shayan Siddiqui (https://github.com/shayansiddiqui)
 
+Technical Documentation: https://abhi4ssj.github.io/squeeze_and_excitation/
+
 ------------------------
 
 Implementation includes 
