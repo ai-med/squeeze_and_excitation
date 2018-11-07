@@ -74,6 +74,7 @@ class SpatialSELayer(nn.Module):
     def forward(self, input_tensor, weights=None):
         """
 
+        :param weights: weights for few shot learning
         :param input_tensor: X, shape = (batch_size, num_channels, H, W)
         :return: output_tensor
         """
