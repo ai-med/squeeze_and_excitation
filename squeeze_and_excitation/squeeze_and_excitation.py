@@ -14,7 +14,7 @@ from enum import Enum
 
 import torch
 import torch.nn as nn
-import torch.nn.Functional as F
+import torch.nn.functional as F
 
 
 class ChannelSELayer(nn.Module):
