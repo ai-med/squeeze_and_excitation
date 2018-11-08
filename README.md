@@ -6,6 +6,8 @@ Authors: Abhijit Guha Roy and Shayan Siddiqui (https://github.com/shayansiddiqui
 
 Technical Documentation: https://abhi4ssj.github.io/squeeze_and_excitation/
 
+Manuscipt for details: https://arxiv.org/abs/1808.08127
+
 ------------------------
 
 Implementation includes 
