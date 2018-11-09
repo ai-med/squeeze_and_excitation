@@ -14,7 +14,7 @@ from enum import Enum
 
 import torch
 import torch.nn as nn
-import torch.nn.Functional as F
+import torch.nn.functional as F
 
 
 class ChannelSELayer(nn.Module):
@@ -80,7 +80,8 @@ class SpatialSELayer(nn.Module):
         # spatial squeeze
         batch_size, channel, a, b = input_tensor.size()
 
-        if weights:
+        if weights is not None:
+            weights = torch.mean(weights, dim=0)
             weights = weights.view(1, channel, 1, 1)
             out = F.conv2d(input_tensor, weights)
         else:
@@ -88,15 +89,17 @@ class SpatialSELayer(nn.Module):
         squeeze_tensor = self.sigmoid(out)
 
         # spatial excitation
-        output_tensor = torch.mul(input_tensor, squeeze_tensor.view(batch_size, 1, a, b))
-
+        # print(input_tensor.size(), squeeze_tensor.size())
+        squeeze_tensor = squeeze_tensor.view(batch_size, 1, a, b)
+        output_tensor = torch.mul(input_tensor, squeeze_tensor)
+        #output_tensor = torch.mul(input_tensor, squeeze_tensor)
         return output_tensor
 
 
 class ChannelSpatialSELayer(nn.Module):
     """
     Re-implementation of concurrent spatial and channel squeeze & excitation:
-        *Roy et al., Concurrent Spatial and Channel Squeeze & Excitation in Fully Convolutional Networks, arXiv:1803.02579*
+        *Roy et al., Concurrent Spatial and Channel Squeeze & Excitation in Fully Convolutional Networks, MICCAI 2018, arXiv:1803.02579*
     """
 
     def __init__(self, num_channels, reduction_ratio=2):
