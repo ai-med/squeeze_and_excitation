@@ -2,4 +2,5 @@ pynb_checkpoints
 squeeze_and_excitation.egg-info/
 *__pycache__*
 .DS_Store
+*.idea/
 
