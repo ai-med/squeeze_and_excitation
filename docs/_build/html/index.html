@@ -152,14 +152,19 @@ a neural network:</p>
 </table>
 <dl class="method">
 <dt id="squeeze_and_excitation.SpatialSELayer.forward">
-<code class="descname">forward</code><span class="sig-paren">(</span><em>input_tensor</em><span class="sig-paren">)</span><a class="headerlink" href="#squeeze_and_excitation.SpatialSELayer.forward" title="Permalink to this definition">¶</a></dt>
+<code class="descname">forward</code><span class="sig-paren">(</span><em>input_tensor</em>, <em>weights=None</em><span class="sig-paren">)</span><a class="headerlink" href="#squeeze_and_excitation.SpatialSELayer.forward" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>input_tensor</strong> – X, shape = (batch_size, num_channels, H, W)</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>weights</strong> – weights for few shot learning</li>
+<li><strong>input_tensor</strong> – X, shape = (batch_size, num_channels, H, W)</li>
+</ul>
+</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">output_tensor</td>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">output_tensor</p>
+</td>
 </tr>
 </tbody>
 </table>

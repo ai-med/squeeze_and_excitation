@@ -45,6 +45,7 @@ class ChannelSELayer(nn.Module):
         :return: output tensor
         """
         batch_size, num_channels, H, W = input_tensor.size()
+        # Average along each channel
         squeeze_tensor = input_tensor.view(batch_size, num_channels, -1).mean(dim=2)
 
         # channel excitation
@@ -74,6 +75,7 @@ class SpatialSELayer(nn.Module):
     def forward(self, input_tensor, weights=None):
         """
 
+        :param weights: weights for few shot learning
         :param input_tensor: X, shape = (batch_size, num_channels, H, W)
         :return: output_tensor
         """
@@ -135,8 +137,6 @@ class SELayer(Enum):
 
         elif self.se_block_type == se.SELayer.CSSE.value:
             self.SELayer = se.ChannelSpatialSELayer(params['num_filters'])
-
-
     """
     NONE = 'NONE'
     CSE = 'CSE'
