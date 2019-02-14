@@ -34,4 +34,13 @@ Link: https://arxiv.org/abs/1803.02579
 
 Link: https://arxiv.org/abs/1808.08127
 
-Let us know if you face any issues. Enjoy :)
+## Installation
+
+Always use the latest release. Use following command with appropriate version no(v1.0) in this particular case to install. You can find the link for the latest release in the release section of this github repo
+
+```
+pip install https://github.com/abhi4ssj/squeeze_and_excitation/releases/download/v1.0/squeeze_and_excitation-1.0-py2.py3-none-any.whl
+```
+
+
+Let us know if you face any issues. You are always welcome to report new issues and bugs and also suggest further improvements. And if you like our work hit that start button on top. Enjoy :)
