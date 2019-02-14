@@ -40,11 +40,12 @@ Always use the latest release. Use following command with appropriate version no
 pip install https://github.com/abhi4ssj/squeeze_and_excitation/releases/download/v1.0/squeeze_and_excitation-1.0-py2.py3-none-any.whl
 ```
 
-
-Let us know if you face any issues. You are always welcome to report new issues and bugs and also suggest further improvements. And if you like our work hit that start button on top. Enjoy :)
-
 ## How to Use
 
 Please use the following link to read the technical documentation
 
 https://abhi4ssj.github.io/squeeze_and_excitation/
+
+
+## Help us improve
+Let us know if you face any issues. You are always welcome to report new issues and bugs and also suggest further improvements. And if you like our work hit that start button on top. Enjoy :)
