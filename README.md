@@ -32,6 +32,13 @@ Link: https://arxiv.org/abs/1803.02579
 
 Link: https://arxiv.org/abs/1808.08127
 
+## Pre-requisites
+
+You need to have following in order for this library to work as expected
+1. Python >= 3.5
+2. Pytorch >= 1.0.0
+3. Numpy >= 1.14.0
+
 ## Installation
 
 Always use the latest release. Use following command with appropriate version no(v1.0) in this particular case to install. You can find the link for the latest release in the release section of this github repo
