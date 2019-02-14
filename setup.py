@@ -7,4 +7,5 @@ setuptools.setup(name="squeeze-and-excitation",
                  author_email="shayan.siddiqui89@gmail.com",
                  description="Squeeze and Excitation pytorch implementation",
                  packages=setuptools.find_packages(),
-                 install_requires=['torch'])
+                 install_requires=['numpy==1.14.3','torch==1.0.1.post2'],
+                 python_requires='>=3.5')
