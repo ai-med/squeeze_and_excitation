@@ -24,11 +24,27 @@ Link: https://arxiv.org/abs/1709.01507
 
 ### Please cite:
 ```
-[1] Roy, A.G., Navab, N. and Wachinger, C., 2018. Concurrent Spatial and Channel Squeeze & Excitation in Fully Convolutional Networks. In Proc. MICCAI 2018.
+@inproceedings{roy2018concurrent,
+  title={Concurrent Spatial and Channel ‘Squeeze \& Excitation’in Fully Convolutional Networks},
+  author={Roy, Abhijit Guha and Navab, Nassir and Wachinger, Christian},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+  pages={421--429},
+  year={2018},
+  organization={Springer}
+}
 ```
 Link: https://arxiv.org/abs/1803.02579
 ```
-[2] Roy, A.G., Navab, N. and Wachinger, C., 2019. Recalibrating Fully Convolutional Networks With Spatial and Channel “Squeeze and Excitation” Blocks. IEEE transactions on medical imaging, 38(2), pp.540-549.
+@article{roy2019recalibrating,
+  title={Recalibrating Fully Convolutional Networks With Spatial and Channel “Squeeze and Excitation” Blocks},
+  author={Roy, Abhijit Guha and Navab, Nassir and Wachinger, Christian},
+  journal={IEEE transactions on medical imaging},
+  volume={38},
+  number={2},
+  pages={540--549},
+  year={2019},
+  publisher={IEEE}
+}
 ```
 Link: https://arxiv.org/abs/1808.08127
 
