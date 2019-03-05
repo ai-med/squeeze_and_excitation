@@ -2,7 +2,7 @@
 
 PyTorch Implementation of 'squeeze and excitation' blocks for Fully Convolutional Neural Networks
 
-Authors: Abhijit Guha Roy and Shayan Siddiqui (https://github.com/shayansiddiqui)
+Authors: Abhijit Guha Roy (https://github.com/abhi4ssj) and Shayan Siddiqui (https://github.com/shayansiddiqui)
 
 Manuscipt for details: https://arxiv.org/abs/1808.08127
 
@@ -22,15 +22,16 @@ Link: https://arxiv.org/abs/1709.01507
 
 (iii) Concurrent Spatial and Channel 'Squeeze and Excitation' (scSE) Block
 
-Please cite:
-
+### Please cite:
+'''
 [1] Roy, A.G., Navab, N. and Wachinger, C., 2018. Concurrent Spatial and Channel Squeeze & Excitation in Fully Convolutional Networks. In Proc. MICCAI 2018.
 
 Link: https://arxiv.org/abs/1803.02579
 
-[2] Roy, A.G., Navab, N. and Wachinger, C., 2018. Recalibrating Fully Convolutional Networks with Spatial and Channel 'Squeeze & Excitation' Blocks. In IEEE Transactions on Medical Imaging.
+[2] Roy, A.G., Navab, N. and Wachinger, C., 2019. Recalibrating Fully Convolutional Networks With Spatial and Channel “Squeeze and Excitation” Blocks. IEEE transactions on medical imaging, 38(2), pp.540-549.
 
 Link: https://arxiv.org/abs/1808.08127
+'''
 
 ## Pre-requisites
 
