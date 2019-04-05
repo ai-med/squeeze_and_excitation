@@ -2,9 +2,7 @@
 
 PyTorch Implementation of 'squeeze and excitation' blocks for Fully Convolutional Neural Networks
 
-Authors: Abhijit Guha Roy and Shayan Siddiqui (https://github.com/shayansiddiqui)
-
-Technical Documentation: https://abhi4ssj.github.io/squeeze_and_excitation/
+Authors: Abhijit Guha Roy (https://github.com/abhi4ssj) and Shayan Siddiqui (https://github.com/shayansiddiqui)
 
 Manuscipt for details: https://arxiv.org/abs/1808.08127
 
@@ -24,14 +22,54 @@ Link: https://arxiv.org/abs/1709.01507
 
 (iii) Concurrent Spatial and Channel 'Squeeze and Excitation' (scSE) Block
 
-Please cite:
-
-[1] Roy, A.G., Navab, N. and Wachinger, C., 2018. Concurrent Spatial and Channel Squeeze & Excitation in Fully Convolutional Networks. In Proc. MICCAI 2018.
-
+### Please cite:
+```
+@inproceedings{roy2018concurrent,
+  title={Concurrent Spatial and Channel ‘Squeeze \& Excitation’in Fully Convolutional Networks},
+  author={Roy, Abhijit Guha and Navab, Nassir and Wachinger, Christian},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+  pages={421--429},
+  year={2018},
+  organization={Springer}
+}
+```
 Link: https://arxiv.org/abs/1803.02579
-
-[2] Roy, A.G., Navab, N. and Wachinger, C., 2018. Recalibrating Fully Convolutional Networks with Spatial and Channel 'Squeeze & Excitation' Blocks. In IEEE Transactions on Medical Imaging.
-
+```
+@article{roy2019recalibrating,
+  title={Recalibrating Fully Convolutional Networks With Spatial and Channel “Squeeze and Excitation” Blocks},
+  author={Roy, Abhijit Guha and Navab, Nassir and Wachinger, Christian},
+  journal={IEEE transactions on medical imaging},
+  volume={38},
+  number={2},
+  pages={540--549},
+  year={2019},
+  publisher={IEEE}
+}
+```
 Link: https://arxiv.org/abs/1808.08127
 
-Let us know if you face any issues. Enjoy :)
+
+## Pre-requisites
+
+You need to have following in order for this library to work as expected
+1. Python >= 3.5
+2. Pytorch >= 1.0.0
+3. Numpy >= 1.14.0
+
+## Installation
+
+Always use the latest release. Use following command with appropriate version no(v1.0) in this particular case to install. You can find the link for the latest release in the release section of this github repo
+
+```
+pip install https://github.com/abhi4ssj/squeeze_and_excitation/releases/download/v1.0/squeeze_and_excitation-1.0-py2.py3-none-any.whl
+```
+
+## How to Use
+
+Please use the following link to read the technical documentation
+
+https://abhi4ssj.github.io/squeeze_and_excitation/
+
+
+## Help us improve
+Let us know if you face any issues. You are always welcome to report new issues and bugs and also suggest further improvements. And if you like our work hit that start button on top. Enjoy :)
