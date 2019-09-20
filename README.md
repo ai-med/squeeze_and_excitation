@@ -2,11 +2,32 @@
 
 PyTorch Implementation of 'squeeze and excitation' blocks for Fully Convolutional Neural Networks
 
-Authors: Abhijit Guha Roy (https://github.com/abhi4ssj) and Shayan Siddiqui (https://github.com/shayansiddiqui)
+Authors: Abhijit Guha Roy (https://github.com/abhi4ssj), Shayan Siddiqui (https://github.com/shayansiddiqui) and Anne-Marie Rickmann (https://github.com/arickm)
 
-Manuscipt for details: https://arxiv.org/abs/1808.08127
+Manuscipt for details: https://arxiv.org/abs/1808.08127, https://arxiv.org/abs/1906.04649
 
 ------------------------
+
+New Additions
+
+(i) 3D version of Spatial Squeeze and Channel Excitation (cSE) Block
+
+(ii) 3D version of Channel Squeeze and Spatial Excitation (sSE) Block
+
+(iii) 3D version of Concurrent Spatial and Channel 'Squeeze and Excitation' (scSE) Block
+
+(iv) 3D Project and Excite Block (Link: https://arxiv.org/abs/1906.04649)
+
+For using these 3D extensions, Please cite
+
+```
+@inproceedings{rickmann2019project,
+  title={`Project \& Excite' Modules for Segmentation of Volumetric Medical Scans},
+  author={Rickmann, Anne-Marie and Sarasua, Ignacio and Roy, Abhijit Guha and Navab, Nassir and Wachinger, Christian},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+  year={2019},
+  organization={Springer}
+```
 
 Implementation includes 
 
