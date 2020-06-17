@@ -2,7 +2,7 @@
 
 PyTorch Implementation of 'squeeze and excitation' blocks for Fully Convolutional Neural Networks
 
-Authors: Abhijit Guha Roy (https://github.com/abhi4ssj), Shayan Siddiqui (https://github.com/shayansiddiqui) and Anne-Marie Rickmann (https://github.com/arickm)
+Authors: [Abhijit Guha Roy](https://github.com/abhi4ssj), [Shayan Siddiqui](https://github.com/shayansiddiqui) and [Anne-Marie Rickmann](https://github.com/arickm)
 
 Manuscipt for details: https://arxiv.org/abs/1808.08127, https://arxiv.org/abs/1906.04649
 
@@ -27,6 +27,7 @@ For using these 3D extensions, Please cite
   booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
   year={2019},
   organization={Springer}
+}
 ```
 
 Implementation includes 
@@ -82,14 +83,14 @@ You need to have following in order for this library to work as expected
 Always use the latest release. Use following command with appropriate version no(v1.0) in this particular case to install. You can find the link for the latest release in the release section of this github repo
 
 ```
-pip install https://github.com/abhi4ssj/squeeze_and_excitation/releases/download/v1.0/squeeze_and_excitation-1.0-py2.py3-none-any.whl
+pip install https://github.com/ai-med/squeeze_and_excitation/releases/download/v1.0/squeeze_and_excitation-1.0-py2.py3-none-any.whl
 ```
 
 ## How to Use
 
 Please use the following link to read the technical documentation
 
-https://abhi4ssj.github.io/squeeze_and_excitation/
+https://ai-med.github.io/squeeze_and_excitation/
 
 
 ## Help us improve
